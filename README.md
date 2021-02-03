@@ -8,7 +8,9 @@ Steps to run code:
         conda create --name <env_name> --file requirements.txt
 ```
 
-Without conda this can be done as in the following guide: https://itsfoss.com/python-setup-linux/
+Without conda this can be done as in the following guide: https://itsfoss.com/python-setup-linux/. 
+
+> :warning: **These installs of pytorch and dgl will work for CUDA 10.1**: If you have another version of the cuda-toolkit on your system device you should get the corresponding versions and change the requirements file accordingly.
    
 2. Run download_datasets.sh (located in ./data) 
 -- 
