@@ -3,7 +3,10 @@ Downloadable code for the experiments in the paper "Graph Neural Networks with L
 
 Steps to run code:
 1. Install dependencies from requirements.txt. If working with conda this can be done in the following way:
+
+'''
         conda create --name <env_name> --file requirements.txt
+'''
    Without conda this can be done as in the following guide: https://itsfoss.com/python-setup-linux/
 2. Run download_datasets.sh (located in ./data) 
 --
