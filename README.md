@@ -7,7 +7,9 @@ Steps to run code:
 ```
         conda create --name <env_name> --file requirements.txt
 ```
-   Without conda this can be done as in the following guide: https://itsfoss.com/python-setup-linux/
+
+Without conda this can be done as in the following guide: https://itsfoss.com/python-setup-linux/
+   
 2. Run download_datasets.sh (located in ./data) 
 -- 
 **_NOTE:_**  All the different versions of all datasets will take up a lot of space on your disk. Separate scripts are provided for every dataset.
