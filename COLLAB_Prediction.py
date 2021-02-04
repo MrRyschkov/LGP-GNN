@@ -363,9 +363,10 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
 
         
 
-def perform_collab_prediction(DATASET_NAME, MODEL_NAME, random_seed, gpu_id):
+def perform_collab_prediction(DATASET_NAME, MODEL_NAME, random_seed):
     config = {}
     # gpu config
+    gpu_id = 0
     use_gpu = True
     device = None
     gpu = {}
