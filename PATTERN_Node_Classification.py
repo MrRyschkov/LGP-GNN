@@ -350,11 +350,12 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
 
         
 
-def perform_pattern_node_classification(DATASET_NAME, MODEL_NAME, random_seed, gpu_id):
+def perform_pattern_node_classification(DATASET_NAME, MODEL_NAME, random_seed):
     config = {}
     # gpu config
     use_gpu = True
     device = None
+    gpu_id = 0
     gpu = {}
     gpu['use'] = use_gpu
     gpu['id'] = gpu_id
