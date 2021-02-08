@@ -20,5 +20,5 @@ Without conda this can be done as in the following guide: https://itsfoss.com/py
 
 3. Get the train-val-test pipeline running as in one of the notebooks. Examples are provided to reproduce the best results for every dataset. The notebooks are also provided as plain .py scripts.
 
-Questions and remarks are can be adressed to <lgpgnn2021@gmail.com>
+Questions and remarks can be adressed to <lgpgnn2021@gmail.com>
 
