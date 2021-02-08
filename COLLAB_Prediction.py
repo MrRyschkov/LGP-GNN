@@ -135,7 +135,6 @@ def train_val_pipeline(MODEL_NAME, dataset, params, net_params, dirs):
     try:
         monet_pseudo = None
         if MODEL_NAME == "MoNet":
-            '''
             print("\nPre-computing MoNet pseudo-edges")
             # for MoNet: computing the 'pseudo' named tensor which depends on node degrees
             us, vs = graph.edges()
@@ -145,9 +144,10 @@ def train_val_pipeline(MODEL_NAME, dataset, params, net_params, dirs):
                     for i in range(graph.number_of_edges())
             ]
             monet_pseudo = torch.Tensor(monet_pseudo)
-            torch.save(monet_pseudo, 'collab_monet_pseudo.pt')
             '''
+            torch.save(monet_pseudo, 'collab_monet_pseudo.pt')
             monet_pseudo = torch.load('collab_monet_pseudo.pt')
+            '''
         with tqdm(range(params['epochs'])) as t:
             for epoch in t:
 
