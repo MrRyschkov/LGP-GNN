@@ -1,0 +1,13 @@
+dgl-cu101==0.5.3
+numpy
+ogb==1.2.2
+scipy
+sklearn
+tensorboard==2.2.2
+tensorboard-plugin-wit==1.6.0.post3
+tensorboardX==1.8
+tensorflow==2.2.0
+tensorflow-estimator==2.2.0
+torch==1.6.0+cu101
+torchvision==0.7.0+cu101
+tqdm
