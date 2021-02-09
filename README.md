@@ -18,9 +18,9 @@ Steps to run code:
 
 https://www.dropbox.com/sh/o2kyoyvh9qodi2r/AABx36JbiijPucYO2g4l61j8a?dl=0
 
-The ZINC files should be placed in ./data/molecules
-The COLLAB files in ./data/COLLAB
-The CLUSTER and PATTERN file in ./data/SBMs
+* The ZINC files should be placed in ./data/molecules
+* The COLLAB files in ./data/COLLAB
+* The CLUSTER and PATTERN files in ./data/SBMs
  
 > :warning:  All the different versions of all datasets will take up a lot of space on your disk. Separate links are provided for every dataset.
 
