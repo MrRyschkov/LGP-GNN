@@ -26,5 +26,9 @@ The CLUSTER and PATTERN file in ./data/SBMs
 
 3. Get the train-val-test pipeline running as in one of the .py scripts. Examples are provided to reproduce the best results for every dataset. Notebooks are also provided for every .py example script.
 
+```
+python ZINC_Example.pu
+```
+
 Please reach out to <lgpgnn2021@gmail.com> for questions and remarks.
 
