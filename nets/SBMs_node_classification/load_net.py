@@ -8,10 +8,7 @@ from nets.SBMs_node_classification.gcn_net import GCNNet
 from nets.SBMs_node_classification.gat_net import GATNet
 from nets.SBMs_node_classification.graphsage_net import GraphSageNet
 from nets.SBMs_node_classification.mlp_net import MLPNet
-from nets.SBMs_node_classification.gin_net import GINNet
 from nets.SBMs_node_classification.mo_net import MoNet as MoNet_
-from nets.SBMs_node_classification.ring_gnn_net import RingGNNNet
-from nets.SBMs_node_classification.three_wl_gnn_net import ThreeWLGNNNet
 
 
 def GatedGCN(net_params):
