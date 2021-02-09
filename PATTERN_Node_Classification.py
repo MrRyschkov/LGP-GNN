@@ -350,7 +350,7 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
 
         
 
-def perform_pattern_node_classification(DATASET_NAME, MODEL_NAME, random_seed):
+def perform_pattern_classification(DATASET_NAME, MODEL_NAME, random_seed):
     config = {}
     # gpu config: uncomment the second pair of lines to train on gpu
     use_gpu = False
