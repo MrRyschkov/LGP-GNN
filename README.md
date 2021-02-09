@@ -2,7 +2,7 @@
 Downloadable code for the experiments in the paper "Graph Neural Networks with Local Graph Parameters"
 
 Steps to run code:
-1. Install the necessary libraries. We advise creating a separate environmnet using the conda package and environment manager.
+1. Install the necessary libraries. We advise creating a separate environmnet using the conda package and environment manager. <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>.
 
 ```
         conda create -n lgp_gnn python=3.7
