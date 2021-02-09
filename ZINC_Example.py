@@ -15,4 +15,4 @@ An example (to reproduce the best results for the GAT model) is provided below:
 
 '''
 
-zr.perform_zinc_regression("ZINC_3456", "GAT", 41)
+zr.perform_zinc_regression("ZINC_3456Cy", "GAT", 41)
