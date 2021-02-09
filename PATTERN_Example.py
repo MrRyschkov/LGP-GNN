@@ -1,5 +1,10 @@
 import PATTERN_Node_Classification as pnc
 
+class DotDict(dict):
+    def __init__(self, **kwds):
+        self.update(kwds)
+        self.__dict__ = self
+
 '''
 The following function allows you to train the provided models with a feature-augmented version of the datasets. 
 
