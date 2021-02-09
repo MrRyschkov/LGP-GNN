@@ -350,9 +350,11 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
 
 def perform_cluster_node_classification(DATASET_NAME, MODEL_NAME, random_seed):
     config = {}
-    # gpu config
-    gpu_id = 0
-    use_gpu = True
+    # gpu config: uncomment the second pair of lines to train on gpu
+    gpu_id = -1
+    use_gpu = False
+    #gpu_id = 0
+    #use_gpu = True
     device = None
     gpu = {}
     gpu['use'] = use_gpu
