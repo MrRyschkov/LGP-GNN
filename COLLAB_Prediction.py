@@ -267,14 +267,7 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
         if MODEL_NAME == "GatedGCN_noE":
             edge_feat = False       
         MODEL_NAME="GatedGCN"
-    
-    if MODEL_NAME == 'MF':
-        seed=random_seed; epochs=500; batch_size=32*1024; init_lr=0.01; lr_reduce_factor=0.5; lr_schedule_patience=10; min_lr = 1e-5; weight_decay=0
-        L=0; hidden_dim=256; out_dim=hidden_dim; num_embs=235868;
-    
-    if MODEL_NAME == 'MLP':
-        seed=random_seed; epochs=500; batch_size=32*1024; init_lr=0.001; lr_reduce_factor=0.5; lr_schedule_patience=10; min_lr = 1e-5; weight_decay=0
-        L=3; hidden_dim=80; out_dim=hidden_dim; dropout=0.0; readout='mean'; gated = False  # Change gated = True for Gated MLP model
+   
     
     if MODEL_NAME == 'GCN':
         seed=random_seed; epochs=500; batch_size=32*1024; init_lr=0.001; lr_reduce_factor=0.5; lr_schedule_patience=10; min_lr = 1e-5; weight_decay=0
@@ -287,10 +280,6 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
     if MODEL_NAME == 'GAT':
         seed=random_seed; epochs=500; batch_size=32*1024; init_lr=0.001; lr_reduce_factor=0.5; lr_schedule_patience=10; min_lr = 1e-5; weight_decay=0
         L=3; n_heads=3; hidden_dim=19; out_dim=n_heads*hidden_dim; dropout=0.0; readout='mean'; layer_type='dgl'
-    
-    if MODEL_NAME == 'GIN':
-        seed=random_seed; epochs=500; batch_size=32*1024; init_lr=0.001; lr_reduce_factor=0.5; lr_schedule_patience=10; min_lr = 1e-5; weight_decay=0
-        L=3; hidden_dim=60; out_dim=hidden_dim; dropout=0.0; readout='mean';
         
     if MODEL_NAME == 'MoNet':
         seed=random_seed; epochs=500; batch_size=32*1024; init_lr=0.001; lr_reduce_factor=0.5; lr_schedule_patience=10; min_lr = 1e-5; weight_decay=0
