@@ -282,12 +282,10 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
         L=16; hidden_dim=90; out_dim=hidden_dim; dropout=0.0; readout='mean'
         pseudo_dim_MoNet=2; kernel=3;
         
-      
-
-        
     # generic new_params
     net_params = {}
     #net_params['in_dim'] = torch.unique(trainset[0][0].ndata['feat'],dim=0).size(0) # node_dim (feat is an integer)
+    # Different to Dwivedi et al.: the node features are now a concatenation of t a one-hot encoding of the integer that's in the original dataset and the lognormalied hom-count(s) of the pattern(s)
     net_params['in_dim'] = dataset.train[0][0].ndata['feat'][0].shape[0]
     net_params['hidden_dim'] = hidden_dim
     net_params['out_dim'] = out_dim
