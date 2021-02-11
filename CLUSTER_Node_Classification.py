@@ -286,6 +286,7 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
     # generic new_params
     net_params = {}
     #net_params['in_dim'] = torch.unique(trainset[0][0].ndata['feat'],dim=0).size(0) # node_dim (feat is an integer)
+    # This line is different than in Dwivedi et al.: the node features are now a concatenation of a one-hot encoding of the original node feature (an integer) and the lognormalized hom-count(s) of the patterns:
     net_params['in_dim'] = dataset.train[0][0].ndata['feat'][0].shape[0]
     net_params['hidden_dim'] = hidden_dim
     net_params['out_dim'] = out_dim
@@ -309,23 +310,10 @@ def set_all_params(dataset, MODEL_NAME, random_seed):
     
     # for graphsage
     net_params['sage_aggregator'] = 'meanpool' 
-
-    # specific for GIN
-    net_params['n_mlp_GIN'] = n_mlp_GIN
-    net_params['learn_eps_GIN'] = True
-    net_params['neighbor_aggr_GIN'] = 'sum'
     
     # specific for MoNet
     net_params['pseudo_dim_MoNet'] = pseudo_dim_MoNet
     net_params['kernel'] = kernel
-    
-    # specific for RingGNN
-    net_params['radius'] = 2
-    num_nodes = [dataset.train[i][0].number_of_nodes() for i in range(len(dataset.train))]
-    net_params['avg_node_num'] = int(np.ceil(np.mean(num_nodes)))
-    
-    # specific for 3WLGNN
-    net_params['depth_of_mlp'] = 2
     
     # specific for pos_enc_dim
     net_params['pos_enc'] = pos_enc
