@@ -6,7 +6,8 @@ The following function allows you to train the provided models with a feature-au
 
     zr.perform_zinc_regression(Dataset, Model, random_seed)
 
-The available options for the dataset are: "ZINC_nofeat", "ZINC_3Cy", "ZINC_4Cy", "ZINC_5Cy", "ZINC_6Cy", "ZINC_34Cy", "ZINC_56Cy", "ZINC_456Cy", "ZINC_3456Cy"
+The available options for the dataset are: "ZINC_nofeat", "ZINC_3Cy", "ZINC_4Cy", "ZINC_5Cy", "ZINC_6Cy", "ZINC_34Cy", "ZINC_56Cy", "ZINC_456Cy", "ZINC_3456Cy", "ZINC_345678910Cy", "ZINC_I_3456789010Cy"
+The last contains the lognormalized subgraph isomorphism counts as additional features, the others homomorphism counts.
 
 The available models are "GAT", "GCN", "MoNet", "GraphSage" and "GatedGCN_E_PE".
 
