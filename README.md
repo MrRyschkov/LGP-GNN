@@ -1,5 +1,5 @@
 # LGP-GNN
-Downloadable code for the experiments in the paper "Graph Neural Networks with Local Graph Parameters"
+Downloadable code for the experiments in the paper "Graph Neural Networks with Local Graph Parameters". Our implementation is based on the implementation of the benchmarking experiments of the paper "Benchmarking Graph Neural Networks" by Dwivedi et al. (<https://github.com/graphdeeplearning/benchmarking-gnns>), the corresponding licence is included.
 
 Steps to run code:
 1. Install the necessary libraries. We advise creating a separate environment using the conda package and environment manager. <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>.
