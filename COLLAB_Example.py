@@ -5,8 +5,8 @@ The following function allows you to train the provided models with a feature-au
 
     zr.perform_collab_prediction(Dataset, Model, random_seed)
 
-The available options for the dataset are: "OGBL-COLLAB", "OGBL-COLLAB_3Cy", "OGBL-COLLAB_4Cy", "OGBL-COLLAB_4Cl",
-"OGBL-COLLAB_5Cl", "OGBL-COLLAB_34Cy", "OGBL-COLLAB_34Cl", "OGBL-COLLAB_345Cl"
+The available options for the dataset are: "OGBL-COLLAB", "OGBL-COLLAB_3Cl", "OGBL-COLLAB_4Cl",
+"OGBL-COLLAB_5Cl", "OGBL-COLLAB_34Cl", "OGBL-COLLAB_345Cl"
 
 The available models are "GAT", "GCN", "MoNet", "GraphSage" and "GatedGCN_E_PE".
 
