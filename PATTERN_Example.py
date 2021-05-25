@@ -10,8 +10,8 @@ The following function allows you to train the provided models with a feature-au
 
     pnc.perform_pattern_classification(Dataset, Model, random_seed)
 
-The available options for the dataset are: "SBM_PATTERN", "SBM_PATTERN_3Cy", "SBM_PATTERN_4Cy", "SBM_PATTERN_4Cl",
-"SBM_PATTERN_5Cl", "SBM_PATTERN_34Cy", "SBM_PATTERN_34Cl", "SBM_PATTERN_345Cl"
+The available options for the dataset are: "SBM_PATTERN", "SBM_PATTERN_3Cl", "SBM_PATTERN_4Cl",
+"SBM_PATTERN_5Cl", "SBM_PATTERN_34Cl", "SBM_PATTERN_345Cl"
 
 The available models are "GAT", "GCN", "MoNet", "GraphSage" and "GatedGCN_E_PE".
 
