@@ -33,5 +33,5 @@ python ZINC_Example.py
 > :warning: **If you want to train the models on GPU**: Uncomment the lines concerning use_gpu and gpu_id in ZINC_Regression.py, COLLAB_Prediction.py, CLUSTER_classification.py and PATTERN_classification.py.
 
 
-Please reach out to <lgpgnn2021@gmail.com> for questions and remarks.
+Please reach out to maksimilian.ryschkov@uantwerpen.be for questions and remarks.
 
